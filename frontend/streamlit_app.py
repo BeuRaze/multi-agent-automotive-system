@@ -13,7 +13,7 @@ if st.button("Generate Report"):
     else:
         try:
             response = requests.post(
-                "http://127.0.0.1:8000/generate-report",
+                BACKEND_URL = "https://your-backend-url.onrender.com/generate-report",
                 json={"car_name": car_name},
             )
 
